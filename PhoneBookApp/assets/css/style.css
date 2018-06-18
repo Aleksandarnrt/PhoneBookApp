@@ -1,0 +1,186 @@
+﻿/*------------ initial body staling -------------------- */
+body, html {
+    
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*-----------------------------------------------------*/
+
+/*-------------------- section and h1 styling ------------------*/
+header {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height:100%;
+    padding-top:35px;
+}
+#phoneBookHeader {
+    margin: 0px auto 35px auto;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+/*-----------------------------------------------------*/
+
+
+/*-------------------- form and form elements styling------------------*/
+
+.formWrapper {
+    border-radius: 5px;
+    width: 600px;
+    margin: 30px auto 0;
+    min-height:500px;
+}
+
+.lbl {
+    margin-left: 5px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.inputWrapper{
+    width:300px;
+    margin:0 auto;
+}
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.btnVisual {
+    padding: 12px 7px;
+    margin: 10px 5px;
+    width: 100px;
+    border-radius: 7px;
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    transition: all 0.5s
+}
+#btnAdd:hover {
+    background: #05bf4f;
+    color: white; 
+    transition: all 0.5s
+}
+#btnDelete:hover {
+    background: #ed0404;
+    color: white;
+    transition: all 0.5s
+}
+
+#txtFirstame, #txtLastname, #txtPhoneNumber {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+.error-label{
+    color:red;
+    font-weight:800;
+}
+
+.form-search {
+    margin: 10px 0;
+}
+.form-search .search {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: white;
+}
+
+
+/*-----------------------------------------------------*/
+
+
+/*----------------table (gridview) styling ------------------*/
+#gvContact, th, td {
+    border: 0px;
+    padding: 10px 15px;
+    text-align: center; 
+}
+.edit {
+    text-decoration: none;
+    background: #edeaea;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+    transition: all 0.3s;
+}
+.edit:hover{
+    background: white;
+    transition: all 0.3s;
+}
+#gvContact {
+    border-collapse:separate;
+    border-spacing: 3px;
+    width: 100%;
+    color: white;
+    letter-spacing:0.1em;
+}
+#gvContact thead tr {
+    background: #262525;
+}
+#gvContact tbody tr:nth-child(odd) {
+    background: transparent;
+}
+#gvContact tbody tr:nth-child(even) {
+background: #262525;
+    
+}
+
+
+
+#gvContact tr:first-child {
+    border-radius: 10px 0 0 10px;
+}
+#gvContact tr:last-child {
+    border-radius:  0 10px 10px 0;
+}
+
+
+/*-----------------------------------------------------*/
+
+
+/*------------------ pagination styling **NOT INPLEMENTED** ------------------*/
+.navigation{
+    display:flex;
+    justify-content:flex-end;
+    flex-direction: row-reverse;
+}
+.pagination a {
+    color: white;
+    background: #262525;
+    float: left;
+    margin-top: 15px;
+    margin-left:2px;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.pagination a:first-child {
+    margin-left:0;
+}
+.pagination a.active {
+    background-color: #ddd;
+    color: black;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    color:black;
+}
+
+/*-----------------------------------------------------*/
